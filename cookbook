@@ -1,0 +1,168 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Project: Recipe book</title>
+        <meta charset="utf-8">
+        <style>
+            body {
+                background-color: rgb(209, 202, 204);
+            }
+            #book-title {
+                color: rgb(255, 211, 158);
+                background-color: rgb(240, 43, 76);
+            }
+            #contents {
+                color: rgb(153, 0, 0);
+            }
+            h2 {
+                color: rgb(0, 143, 21);
+            }
+            table {
+                background-color: rgb(230, 217, 135);
+            }
+        </style>
+    </head>
+    <body>
+       
+        <h1 id="book-title">Luke Nukem's Recipe Book</h1>
+        
+        <h2 id="contents">Contents:</h2>
+        
+        <ol>
+            <li><a href="#chili-fries">Rootin Tootin Chili Cheese Fries</a></li>
+            <li><a href="#lasagna">Vegeta Lasagna</a></li>
+            <li><a href="#shepherd-pie">Hellifiknow Shepherd Pie</a></li>
+        </ol>
+        
+        <h2 id="chili-fries">Rootin Tootin Chili Cheese Fries</h2>
+        
+        <img src="https://www.kasandbox.org/programming-images/food/hamburger.png" width = "100">
+    
+        
+        <ul>
+            <li>Time: 45min</li>
+            <li>Serves: 4</li>
+        </ul>
+        
+        <table>
+            <thead>
+                <tr>
+                    <th>Ingredients</th>
+                    <th>Quantity</th>
+                </tr>
+            </thead>
+            <tr>
+                <td>Potatos</td>
+                <td>4 lbs</td>
+            </tr>
+            <tr>
+                <td>Salt</td>
+                <td>1 tbsp</td>
+            </tr>
+            <tr>
+                <td>Black Pepper</td>
+                <td>1 tbsp</td>
+            </tr>
+            <tr>
+                <td>Oil</td>
+                <td>1 tbsp</td>
+            </tr>
+            <tr>
+                <td>Chili with beans</td>
+                <td>15 oz</td>
+            </tr>
+            <tr>
+                <td>Crushed Red Pepper</td>
+                <td>1/2 tbsp
+            </tr>
+            <tr>
+                <td>Shredded Cheese</td>
+                <td>8 oz</td>
+            </tr>
+            
+            <tbody>
+            </tbody>
+        </table>
+        
+        <h3><strong>Step 1: Potato Prep</strong>
+</h3>
+        <ol>
+            <li>Scrub potatos under cold water until clean of dirt.</li>
+            <li>Longways, cut the sides off the potatos to make a rectangle with round ends</li>
+            <li>Cut potatos in to fry sizes of your preference and place in cold water</li>
+            <li>After all the potatos have been cut in and placed in the cold water, stir fries in water 3 or 4 time and pour out starch soaked water and replace with clean cold water and let soak for <strong>10 mins</strong> and preheat oven to <strong>450 degrees</strong></li>
+            <li>Drain water and pat potatos dry with paper towels</li>
+            <li>Return to bowl, add the tbsp of Salt, Black Pepper, and oil, then mix by hand until all fries are well covered(longer the better)</li>
+            <li>Spray baking sheet with favorite cooking spray and spread fries on sheet and cook for <strong>35-40 mins</strong>
+                
+            </li>
+        </ol>
+    <h3>Step 2: Chili Prep</h3>
+        <ol>
+            <li>About 10 mins before fries are done baking, place the 15 oz of chili w/beans in to a pot and heat up on low temp</li>
+            <li>Stir in the 1/2 tbsp of Crushed Red Pepper</li>
+            <li>Keep on low heat, stir occasionally until fries are done</li>
+        </ol>
+    <h3>
+        Step 3: It all comes together
+    </h3>
+    <ol>
+        <li>Turn oven off and remove fries</li>
+        <li>spread chili w/beans over the fries</li>
+        <li>Sprinkle shredded on top of it all and then place everything in oven to let the cheese melt</li>
+        <li>When cheese is melted(about 5 mins) remove from oven and enjoy</li>
+    </ol>
+
+    <p><em>Source: <a href="?">Some recipes websites</a></em></p>
+    <p><a href="#book-title">Back to Recipe list</a></p>
+    <h2 id="lasagna">Vegeta Lasagna</h2>
+        
+        <img src="https://www.kasandbox.org/programming-images/food/broccoli.png" width="100">
+        <ul>
+            <li>Time: More than a frozen Lasagna</li>
+            <li>Serves: 6</li>
+        </ul>
+        
+        <table>
+            <thead>
+                <tr>
+                    <th>Ingredients</th>
+                    <th>Quantity</th>
+                </tr>
+            </thead>
+            <tbody>
+            </tbody>
+        </table>
+        
+        
+        <p><strong>Step 1:</strong> Do something.
+</p>
+        
+    <p><em>Source: <a href="?">Some recipes websites</a></em></p>
+    <p><a href="#book-title">Back to Recipe list</a></p>
+    <h2 id="shepherd-pie">Hellifiknow Shepherd Pie</h2>
+        <img src="https://www.kasandbox.org/programming-images/food/potatoes.png" width="100">
+        <ul>
+            <li>Time: 6</li>
+            <li>Serves: More than an hour less than 2</li>
+        </ul>
+        
+        <table>
+            <thead>
+                <tr>
+                    <th>Ingredients</th>
+                    <th>Quantity</th>
+                </tr>
+            </thead>
+            <tbody>
+            </tbody>
+        </table>
+        
+        
+        <p><strong>Step 1:</strong> Do something.
+</p>
+        
+    <p><em>Source: <a href="?">Some recipes websites</a></em></p>
+    <p><a href="#book-title">Back to Recipe list</a></p>
+    </body>
+</html>
