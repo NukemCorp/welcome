@@ -1,0 +1,169 @@
+<!DOCTYPE html>
+<HTML>
+    <head>
+        <style>
+            h1 {
+                position: center;
+                width: auto;
+                margin: 10px;
+                border: 5px outset;
+                padding: 10px;
+                background-color: gray;
+                text-align: center;
+            }
+            h2 {
+                background-color:lightyellow;
+                margin: auto;
+                border: 3px dotted;
+                padding: 5px;                
+            }
+            p {
+                background-color: lightsalmon;
+                margin: auto;
+                border: 3px double;
+                padding: 5px;
+            }
+            body {
+                background: lightcyan;
+                margin: auto;
+                border: 30px ridge whitesmoke;
+                padding: 10px;
+            }
+            
+        </style>
+        <script>
+            function jsInHead() {
+                document.getElementById("jsInsideHeadDemo").innerHTML = "Paragraph changed from Head location.";
+            }
+        </script>
+    </head>
+
+    <body>
+
+        <h1>&#9762 Nukem Corporation &#9762</h1>
+        
+        <button type = "button" onclick="document.getElementById('time').innerHTML = Date()">Click me to display the Date and Time.</button>
+        <p id = "time">What time is it?</p>
+        
+        <h2>What Can JavaScript Do?</h2>
+
+        <p id = "demo">JavaScript can change HTML content.</p>
+        <button type = "button" onclick = 'document.getElementById("demo").innerHTML = "Hello JavaScrip!"'>Click me!</button>
+
+        <p>In this case JavaScript changes the value of the src (source) attribute of an image.</p>
+        <button onclick="document.getElementById('myImage').src = 'pic_bulbon.gif'">Turn on the light</button>
+        <img id="myImage" src="pic_bulboff.gif" style="width:100px">
+        <button onclick="getElementById('myImage').src='pic_bulboff.gif'">Turn Off Light</button>
+
+        <p id="changeFont">JavaScript can change the style of an HTML element.</p>
+        <button type="button" onclick="document.getElementById('changeFont').style.fontSize='35px'">Change font size</button>
+
+        <p id="hide">JavaScript can hide HTML elements.</p>
+        <button type="button" onclick="document.getElementById('hide').style.display='none'">Hide element</button>
+
+        <p>JavaScript can show hidden HTML elements.</p>
+        <button type="button" onclick="document.getElementById('hide').style.display='block'">Show hidden element</button>
+
+        <h2>Next JavaScrip in body</h2>
+
+        <p id="inBody"></p>
+        <script>
+
+            document.getElementById('inBody').innerHTML = "I'm inside the script and /script that is inside the body."
+
+        </script>
+
+       <h2>Java in Head</h2> 
+       <p id="jsInsideHeadDemo">Original Paragraph</p>
+       <button type="button" onclick="jsInHead()">try it</button>
+
+       <h2>Using external JavaScript</h2>
+       <p id="externalJS">This text will be changed by external JavaScript file.</p>
+       <button type="button" onclick="myPractice()">Try it</button>
+       <p>myPractice is stored in an external file called "practiceJS.js"</p>
+       <script src="practiceJS.js"></script>
+
+       <h2>Using JavaScript to output data</h2>
+       <p>This JS code will add 5 + 6 using document.getElementById().</p>
+       <p id="jsAdding"></p>
+       <script>
+           document.getElementById("jsAdding").innerHTML = 5 + 6;
+       </script>
+
+       <h2>This will use the document.write() to add 5 + 6</h2>
+       <p>Never call document.write after the document has finished loading.
+           It will overwrite the whole document.</p>
+        <script>
+            document.write(5 + 6);
+        </script>
+
+        <h2>By clicking on this button will show what happens if you call a document.write() after the document has been loaded.</h2>
+        <button type="button" onclick="document.write(5 + 6)">Erase and show output</button>
+
+        <h2>This part of the code uses the window.alert() code</h2>
+        <script>
+            window.alert(5 + 6 + " Welcome!");
+        </script>
+
+        <h2>Using console to help with debugging purposes. Hit F12 on you keyboard and look at the Console tab</h2>
+        <script>
+            console.log(5 + 6);
+        </script>
+
+        <h2>JavaScript doesn't have any print ofject or print methods.<br> 
+            You cannot access output devices from JavaScript.<br>
+            The only exception is that you can all the window.print() method in the browser to print the content of the cerrent window</h2>
+        <button onclick="window.print()">Print this page</button>
+
+        <h2>JavaScript Statements</h2>
+        <p>A <b>JavaScript Program</b> is a list of <b>statements</b> to be executed by a computer</p>
+        <p id="statement"></p>
+        <script>
+            var x, y, z;
+            x = 5;
+            y = 6;
+            z = x + y;
+            document.getElementById("statement").innerHTML = "The value of z is " + z + ".";
+        </script>
+
+        <h2>JavaScript code blocks are written between { and }</h2>
+        <button type = "button" onclick = "helloDolly()">Do it!</button>
+        <p id = "hello"></p>
+        <p id = "howAreYou"></p>
+
+        <script>
+            function helloDolly() {
+                document.getElementById("hello").innerHTML = "Hello Dolly";
+                document.getElementById("howAreYou").innerHTML = "How are You?";
+            }
+        </script>
+        
+        <h2>JavaScript Variables: Create a variable, assign a value to it, and display it.</h2>
+        <p id = "displayCar"></p>
+        <script>
+            var carName = "Tesla Cybertruck";
+            document.getElementById("displayCar").innerHTML = carName;
+        </script>
+
+        <h2>JavaScript Global Variables</h2>
+        <p>In HTML, global variables defined with <b>var</b>, will become window variables.</p>
+        <p id = "globalVar"></p>
+        <script>
+            var carName = "CyberTruck";
+            //code here can use window.carName
+            document.getElementById("globalVar").innerHTML = "I can display " + window.carName;
+        </script>
+
+        <h2>JavaScript Global Variables</h2>
+        <p>In HTML, global variables defined with <b>let</b>, will not become window variables.</p>
+        <p id = "letVar"></p>
+        <script>
+            let carName = "Scion";
+            //code here cannot use window.carName
+            document.getElementById("letVar").innerHTML = "I cannot display " + carName;
+        </script>
+
+        
+
+    </body>
+</HTML>
